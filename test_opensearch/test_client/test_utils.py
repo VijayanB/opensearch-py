@@ -27,8 +27,8 @@
 
 from __future__ import unicode_literals
 
-from opensearch.client.utils import _bulk_body, _escape, _make_path, query_params
-from opensearch.compat import PY2
+from opensearch-py.client.utils import _bulk_body, _escape, _make_path, query_params
+from opensearch-py.compat import PY2
 
 from ..test_cases import SkipTest, TestCase
 

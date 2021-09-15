@@ -31,8 +31,8 @@ import time
 import mock
 import pytest
 
-from opensearch import OpenSearch, helpers
-from opensearch.serializer import JSONSerializer
+from opensearch-py import OpenSearch, helpers
+from opensearch-py.serializer import JSONSerializer
 
 from .test_cases import TestCase
 

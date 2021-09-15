@@ -36,8 +36,8 @@ try:
 except ImportError:
     np = pd = None
 
-from opensearch.exceptions import ImproperlyConfigured, SerializationError
-from opensearch.serializer import (
+from opensearch-py.exceptions import ImproperlyConfigured, SerializationError
+from opensearch-py.serializer import (
     DEFAULT_SERIALIZERS,
     Deserializer,
     JSONSerializer,

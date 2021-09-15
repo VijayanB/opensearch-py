@@ -37,9 +37,9 @@ import pytest
 from mock import patch
 from multidict import CIMultiDict
 
-from opensearch import AIOHttpConnection, __versionstr__
-from opensearch.compat import reraise_exceptions
-from opensearch.exceptions import ConnectionError
+from opensearch-py import AIOHttpConnection, __versionstr__
+from opensearch-py.compat import reraise_exceptions
+from opensearch-py.exceptions import ConnectionError
 
 pytestmark = pytest.mark.asyncio
 

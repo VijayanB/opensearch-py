@@ -156,7 +156,7 @@ class OpenSearch(object):
     is used to encode all outgoing requests.
     However, you can implement your own custom serializer::
 
-        from opensearch.serializer import JSONSerializer
+        from opensearch-py.serializer import JSONSerializer
 
         class SetEncoder(JSONSerializer):
             def default(self, obj):

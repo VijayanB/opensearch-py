@@ -26,13 +26,13 @@
 
 from typing import Any, AsyncGenerator, Dict
 
-from opensearch import (
+from opensearch-py import (
     AIOHttpConnection,
     AsyncOpenSearch,
     AsyncTransport,
     ConnectionPool,
 )
-from opensearch.helpers import (
+from opensearch-py.helpers import (
     async_bulk,
     async_reindex,
     async_scan,

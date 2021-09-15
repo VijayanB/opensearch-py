@@ -26,13 +26,13 @@
 
 import time
 
-from opensearch.connection import Connection
-from opensearch.connection_pool import (
+from opensearch-py.connection import Connection
+from opensearch-py.connection_pool import (
     ConnectionPool,
     DummyConnectionPool,
     RoundRobinSelector,
 )
-from opensearch.exceptions import ImproperlyConfigured
+from opensearch-py.exceptions import ImproperlyConfigured
 
 from .test_cases import TestCase
 

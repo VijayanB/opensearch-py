@@ -26,8 +26,8 @@
 
 from unittest import SkipTest
 
-from opensearch.helpers import test
-from opensearch.helpers.test import OpenSearchTestCase as BaseTestCase
+from opensearch-py.helpers import test
+from opensearch-py.helpers.test import OpenSearchTestCase as BaseTestCase
 
 client = None
 

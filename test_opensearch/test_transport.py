@@ -32,10 +32,10 @@ import time
 
 from mock import patch
 
-from opensearch.connection import Connection
-from opensearch.connection_pool import DummyConnectionPool
-from opensearch.exceptions import ConnectionError, TransportError
-from opensearch.transport import Transport, get_host_info
+from opensearch-py.connection import Connection
+from opensearch-py.connection_pool import DummyConnectionPool
+from opensearch-py.exceptions import ConnectionError, TransportError
+from opensearch-py.transport import Transport, get_host_info
 
 from .test_cases import TestCase
 

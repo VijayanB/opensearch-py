@@ -10,8 +10,8 @@
 
 from unittest import TestCase
 
-from opensearch import OpenSearch
-from opensearch.helpers.test import OPENSEARCH_URL
+from opensearch-py import OpenSearch
+from opensearch-py.helpers.test import OPENSEARCH_URL
 
 
 class TestSecurity(TestCase):

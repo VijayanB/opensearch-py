@@ -28,7 +28,7 @@ from __future__ import unicode_literals
 
 import warnings
 
-from opensearch.client import OpenSearch, _normalize_hosts
+from opensearch-py.client import OpenSearch, _normalize_hosts
 
 from ..test_cases import OpenSearchTestCase, TestCase
 

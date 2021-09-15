@@ -29,7 +29,7 @@ import nox
 SOURCE_FILES = (
     "setup.py",
     "noxfile.py",
-    "opensearch/",
+    "opensearch-py/",
     "test_opensearch/",
     "utils/",
 )
@@ -68,14 +68,14 @@ def lint(session):
 
     # Run mypy on the package and then the type examples separately for
     # the two different mypy use-cases, ourselves and our users.
-    session.run("mypy", "--strict", "opensearch/")
+    session.run("mypy", "--strict", "opensearch-py/")
     session.run("mypy", "--strict", "test_opensearch/test_types/sync_types.py")
     session.run("mypy", "--strict", "test_opensearch/test_types/async_types.py")
 
     # Make sure we don't require aiohttp to be installed for users to
     # receive type hint information from mypy.
     session.run("python", "-m", "pip", "uninstall", "--yes", "aiohttp")
-    session.run("mypy", "--strict", "opensearch/")
+    session.run("mypy", "--strict", "opensearch-py/")
     session.run("mypy", "--strict", "test_opensearch/test_types/sync_types.py")
 
 

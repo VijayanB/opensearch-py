@@ -41,10 +41,10 @@ import pytest
 import urllib3
 import yaml
 
-from opensearch import OpenSearchWarning, TransportError
-from opensearch.client.utils import _base64_auth_header
-from opensearch.compat import string_types
-from opensearch.helpers.test import _get_version
+from opensearch-py import OpenSearchWarning, TransportError
+from opensearch-py.client.utils import _base64_auth_header
+from opensearch-py.compat import string_types
+from opensearch-py.helpers.test import _get_version
 
 from . import get_client
 

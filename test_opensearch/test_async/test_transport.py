@@ -33,10 +33,10 @@ import json
 import pytest
 from mock import patch
 
-from opensearch import AsyncTransport
-from opensearch.connection import Connection
-from opensearch.connection_pool import DummyConnectionPool
-from opensearch.exceptions import ConnectionError, TransportError
+from opensearch-py import AsyncTransport
+from opensearch-py.connection import Connection
+from opensearch-py.connection_pool import DummyConnectionPool
+from opensearch-py.exceptions import ConnectionError, TransportError
 
 pytestmark = pytest.mark.asyncio
 

@@ -52,13 +52,13 @@ class AsyncOpenSearch(object):
 
     The instance has attributes ``cat``, ``cluster``, ``indices``, ``ingest``,
     ``nodes``, ``snapshot`` and ``tasks`` that provide access to instances of
-    :class:`~opensearch.client.CatClient`,
-    :class:`~opensearch.client.ClusterClient`,
-    :class:`~opensearch.client.IndicesClient`,
-    :class:`~opensearch.client.IngestClient`,
-    :class:`~opensearch.client.NodesClient`,
-    :class:`~opensearch.client.SnapshotClient` and
-    :class:`~opensearch.client.TasksClient` respectively. This is the
+    :class:`~opensearch-py.client.CatClient`,
+    :class:`~opensearch-py.client.ClusterClient`,
+    :class:`~opensearch-py.client.IndicesClient`,
+    :class:`~opensearch-py.client.IngestClient`,
+    :class:`~opensearch-py.client.NodesClient`,
+    :class:`~opensearch-py.client.SnapshotClient` and
+    :class:`~opensearch-py.client.TasksClient` respectively. This is the
     preferred (and only supported) way to get access to those classes and their
     methods.
 
@@ -156,7 +156,7 @@ class AsyncOpenSearch(object):
     is used to encode all outgoing requests.
     However, you can implement your own custom serializer::
 
-        from opensearch.serializer import JSONSerializer
+        from opensearch-py.serializer import JSONSerializer
 
         class SetEncoder(JSONSerializer):
             def default(self, obj):

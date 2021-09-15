@@ -24,7 +24,7 @@
 #  specific language governing permissions and limitations
 #  under the License.
 
-from opensearch.exceptions import TransportError
+from opensearch-py.exceptions import TransportError
 
 from .test_cases import TestCase
 

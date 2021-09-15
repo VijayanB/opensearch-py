@@ -26,7 +26,7 @@
 
 from typing import Any, AsyncGenerator, Dict, Generator
 
-from opensearch1 import (
+from opensearch-py import (
     AIOHttpConnection,
     AsyncOpenSearch,
     AsyncTransport,
@@ -35,7 +35,7 @@ from opensearch1 import (
     RequestsHttpConnection,
     Transport,
 )
-from opensearch1.helpers import (
+from opensearch-py.helpers import (
     async_bulk,
     async_reindex,
     async_scan,

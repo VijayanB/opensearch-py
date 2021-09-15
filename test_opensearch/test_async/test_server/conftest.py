@@ -28,8 +28,8 @@ import asyncio
 
 import pytest
 
-import opensearch
-from opensearch.helpers.test import CA_CERTS, OPENSEARCH_URL
+import opensearch-py
+from opensearch-py.helpers.test import CA_CERTS, OPENSEARCH_URL
 
 from ...utils import wipe_cluster
 

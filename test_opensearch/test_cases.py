@@ -28,7 +28,7 @@ from collections import defaultdict
 from unittest import SkipTest  # noqa: F401
 from unittest import TestCase
 
-from opensearch import OpenSearch
+from opensearch-py import OpenSearch
 
 
 class DummyTransport(object):

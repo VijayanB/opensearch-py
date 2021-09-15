@@ -40,14 +40,14 @@ from mock import Mock, patch
 from requests.auth import AuthBase
 from urllib3._collections import HTTPHeaderDict
 
-from opensearch import __versionstr__
-from opensearch.compat import reraise_exceptions
-from opensearch.connection import (
+from opensearch-py import __versionstr__
+from opensearch-py.compat import reraise_exceptions
+from opensearch-py.connection import (
     Connection,
     RequestsHttpConnection,
     Urllib3HttpConnection,
 )
-from opensearch.exceptions import (
+from opensearch-py.exceptions import (
     ConflictError,
     ConnectionError,
     NotFoundError,
