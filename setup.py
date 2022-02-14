@@ -59,8 +59,8 @@ tests_require = [
     "pyyaml",
     "pytest",
     "pytest-cov",
-    "boto3",
-    "botocore",
+    "boto3;python_version>='3.6'",
+    "botocore;python_version>='3.6'",
 ]
 async_require = ["aiohttp>=3,<4"]
 
