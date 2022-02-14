@@ -412,6 +412,7 @@ class TestRequestsConnection(TestCase):
 
     def test_aws_signer_http_auth_is_allowed(self):
         if sys.hexversion >= 0x03060000:
+            print("inside test_aws_signer_http_auth_is_allowed..")
             region = "us-west-1"
             session_credentials = "mock_session_credentials"
             auth = AwsSignerV4(region, session_credentials).sign_request()
