@@ -31,6 +31,7 @@ import json
 import os
 import re
 import ssl
+import sys
 import unittest
 import warnings
 from platform import python_version
@@ -56,6 +57,7 @@ from opensearchpy.exceptions import (
     RequestError,
     TransportError,
 )
+from opensearchpy.helpers.signer import AwsSignerV4
 
 from .test_cases import SkipTest, TestCase
 
@@ -407,6 +409,14 @@ class TestRequestsConnection(TestCase):
         c = RequestsHttpConnection(http_auth=auth)
 
         self.assertEqual(auth, c.session.auth)
+
+    def test_aws_signer_http_auth_is_allowed(self):
+        if sys.hexversion >= 0x03060000:
+            region = "us-west-1"
+            session_credentials = "mock_session_credentials"
+            auth = AwsSignerV4(region, session_credentials).sign_request()
+            c = RequestsHttpConnection(http_auth=auth)
+            self.assertEqual(auth, c.session.auth)
 
     def test_timeout_set(self):
         con = RequestsHttpConnection(timeout=42)
